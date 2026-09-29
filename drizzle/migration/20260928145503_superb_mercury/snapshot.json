@@ -1,0 +1,81 @@
+{
+  "version": "6",
+  "dialect": "mysql",
+  "id": "511f2e5d-4b8a-4272-9b36-f7402ea234c2",
+  "prevIds": [
+    "00000000-0000-0000-0000-000000000000"
+  ],
+  "ddl": [
+    {
+      "name": "shortened_links",
+      "entityType": "tables"
+    },
+    {
+      "type": "int",
+      "notNull": true,
+      "autoIncrement": true,
+      "default": null,
+      "onUpdateNow": false,
+      "onUpdateNowFsp": null,
+      "charSet": null,
+      "collation": null,
+      "generated": null,
+      "name": "id",
+      "entityType": "columns",
+      "table": "shortened_links"
+    },
+    {
+      "type": "varchar(20)",
+      "notNull": true,
+      "autoIncrement": false,
+      "default": null,
+      "onUpdateNow": false,
+      "onUpdateNowFsp": null,
+      "charSet": null,
+      "collation": null,
+      "generated": null,
+      "name": "shortCode",
+      "entityType": "columns",
+      "table": "shortened_links"
+    },
+    {
+      "type": "varchar(255)",
+      "notNull": true,
+      "autoIncrement": false,
+      "default": null,
+      "onUpdateNow": false,
+      "onUpdateNowFsp": null,
+      "charSet": null,
+      "collation": null,
+      "generated": null,
+      "name": "url",
+      "entityType": "columns",
+      "table": "shortened_links"
+    },
+    {
+      "columns": [
+        "id"
+      ],
+      "name": "PRIMARY",
+      "table": "shortened_links",
+      "entityType": "pks"
+    },
+    {
+      "columns": [
+        {
+          "value": "shortCode",
+          "isExpression": false
+        }
+      ],
+      "isUnique": true,
+      "using": null,
+      "algorithm": null,
+      "lock": null,
+      "nameExplicit": false,
+      "name": "shortCode_unique",
+      "table": "shortened_links",
+      "entityType": "indexes"
+    }
+  ],
+  "renames": []
+}

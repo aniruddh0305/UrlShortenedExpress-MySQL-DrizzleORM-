@@ -1,0 +1,22 @@
+{
+  "name": "url-shortened-fullstack-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node --env-file=.env --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "drizzle-orm": "^0.45.3",
+    "ejs": "^5.0.2",
+    "express": "^5.2.1",
+    "mysql2": "^3.24.4",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.11"
+  }
+}
